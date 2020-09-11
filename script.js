@@ -4,6 +4,19 @@ $(document).ready(function () {
 let saveEvent = "";
 
 
+// console.log($(".calendar-text"))
+
+$(".calendar-text").each(function (){
+    // console.log($(this))
+    let eleId = $(this).attr("id")
+    // console.log(eleId)
+    let localVal = localStorage.getItem(eleId)
+    // console.log(localVal)
+    if (localVal !== null){
+        $(this).val(localVal)
+    }
+})
+
 
 
 
@@ -42,8 +55,9 @@ $(".save-event").on("click", function(){
     // Capture text-area input content
     saveEvent = $(this).parent().siblings(".calendar-event").children(".calendar-text").val();
     // console.log(saveEvent)
-    
-
+    let eleId = $(this).parent().siblings(".calendar-event").children(".calendar-text").attr("id");
+    // console.log(eleId)
+    localStorage.setItem(eleId, saveEvent)
 
 })
 
