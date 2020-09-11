@@ -3,8 +3,13 @@ $(document).ready(function () {
 
 let saveEvent = "";
 
+// Time Block
+$(".time-text").each(function(){
+    let timeText = $(this).data("time");
+    // console.log(timeText)
+    
+})
 
-// console.log($(".calendar-text"))
 
 $(".calendar-text").each(function (){
     // console.log($(this))
@@ -17,37 +22,7 @@ $(".calendar-text").each(function (){
     }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log($(".calendar-text"))
 
 // Event Listener for Calendar Event save button
 $(".save-event").on("click", function(){
@@ -63,13 +38,6 @@ $(".save-event").on("click", function(){
 
 
 })
-
-
-
-
-
-
-
 
 
 // # 05 Third-Party APIs: Work Day Scheduler
