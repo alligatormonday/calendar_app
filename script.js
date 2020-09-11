@@ -1,6 +1,7 @@
 $(document).ready(function () {
 // console.log("document loaded")
 
+// Variable
 let saveEvent = "";
 
 // Time Block
@@ -10,7 +11,7 @@ $(".time-text").each(function(){
     
 })
 
-
+// Local Storage
 $(".calendar-text").each(function (){
     // console.log($(this))
     let eleId = $(this).attr("id")
