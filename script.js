@@ -37,8 +37,13 @@ $(".save-event").on("click", function(){
 
 })
 
+$(".save-event").on("click", function(){
+    location.reload();
+})
 
 })
+
+
 
 
 // # 05 Third-Party APIs: Work Day Scheduler
