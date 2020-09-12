@@ -4,6 +4,10 @@ $(document).ready(function () {
 // Variable
 let saveEvent = "";
 
+$("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+
+  let currentTime = moment().hour();
+
 // Time Block
 $(".time-text").each(function(){
     let timeText = $(this).data("time");
@@ -21,7 +25,18 @@ $(".calendar-text").each(function (){
     if (localVal !== null){
         $(this).val(localVal)
     }
-})
+
+    currentTime = moment().hour();
+    // console.log(currentTime)
+     let timeBlock = $(this).attr("data-hour");
+     if (timeBlock > currentTime){
+         $(this).addClass("future");
+     } else if (timeBlock < currentTime){
+         $(this).addClass("past");
+     } else if (timeBlock == currentTime){
+         $(this).addClass("present");
+     }
+});
 
 // console.log($(".calendar-text"))
 
