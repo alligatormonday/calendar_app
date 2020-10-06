@@ -2,6 +2,11 @@
 
 ## Author: alligatormonday (Joseph Jepson)
 
+## Technologies Used
+
+* Bootstrap
+* Moment.js
+
 ## Description 
 
 This is my submission for my fifth homework assignment for the University of Arizona - Coding Bootcamp for Full-Stack Web Development program.
