@@ -22,7 +22,7 @@ In this assignment I was tasked with creating a daily planner/calendar applicati
 
 I used pre-existing HTML and CSS (provided by the instructor) and modified it with Bootstrap. I coded the JavaScript from scratch and implemented _Moment.js 2.27.0_.
 
-View deployment here: [calendar_app](https://alligatormonday.github.io/calendar_app/)
+View deployment: [calendar_app](https://alligatormonday.github.io/calendar_app/)
 
 My main goal with this assignment was to gain a stronger understanding of _local storage_. I kept things simple. There's nothing special or unique going on in this code. But I'm really proud of it's simplicity. This is the first assignment that I probably spent the least amount of time on, but not to the detriment of the assignment. 
 
